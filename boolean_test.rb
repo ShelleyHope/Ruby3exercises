@@ -1,4 +1,3 @@
-
 def provide_mortgage?(salary: 0, deposit: 0, property_value: 0, borrower_bankrpt: true)
   loan_amount = property_value - deposit
   min_deposit = property_value >= 650000 ? 0.2 : 0.05
@@ -9,7 +8,7 @@ def provide_mortgage?(salary: 0, deposit: 0, property_value: 0, borrower_bankrpt
   max_multiplier = var1 >= 0.75 ? var2 : 5 # how many annual incomes can be borrowed
   puts max_multiplier
   if borrower_bankrpt == true 
-  	puts "Sorry sunshine, not today thank you."
+  	puts "We are unable to provide mortgages to bankrupt borrowers, please seek an alternative lender."
   end
   deposit >= property_value * min_deposit && salary * max_multiplier >= loan_amount && borrower_bankrpt == false
 
@@ -30,5 +29,9 @@ end
 # false
 
 
-puts provide_mortgage?(property_value: 1000000, salary: 10000, deposit: 800000, borrower_bankrpt: true)
+puts provide_mortgage?(
+  property_value: 1000000, 
+  salary: 10000, 
+  deposit: 800000, 
+  borrower_bankrpt: true)
 
