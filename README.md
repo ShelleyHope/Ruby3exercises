@@ -1,7 +1,7 @@
 Hackpad Exercises Ruby 3
 ========================
 
-Some exercises using Boolean logic for a mortgage provider.
+Makers Academy, Week 2: Some exercises using Boolean logic for a mortgage provider.
 
 How to use
 ----------
