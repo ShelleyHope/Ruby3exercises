@@ -5,7 +5,7 @@ Some exercises using Boolean logic for a mortgage provider.
 
 How to use
 ----------
-Amend variables on lines 33-36 of boolean_test.rb files then
+Amend variables on lines 33-36 of boolean_test.rb file then run:
 
 ```shell
 ruby boolean_test.rb
